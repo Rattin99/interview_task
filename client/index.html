@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>clickfit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="//code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 <body>
+    <div class="card">
+       
+    </div>
+
+    <div id="drop-zone">
+        <form class="my-form">
+          <p>Upload image with the file dialog or by dragging and dropping images onto the dashed region</p>
+          <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <label class="button" for="fileElem">Select some files</label>
+        </form>
+    </div>
     
+    <script async src="script.js"></script>
 </body>
 </html>
